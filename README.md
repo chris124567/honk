@@ -9,5 +9,5 @@ This is a simple botnet in C that uses TCP and supports only a single C&C.  I wr
 * Server uses select() and nonblocking sockets
 * Messages have a code system, 'p' and 'P' for ping and pong, 's' to execute command, easy to implement your own
 * Control C&C over Telnet server (by default on port 5555)
-* Client keeps trying to reconnect (with increasingly large delay)
+* Client keeps trying to reconnect on error (with increasingly large delay)
 * Client closes kernel's watchdog and STDOUT/STDIN/STDERR if not in debug mode
